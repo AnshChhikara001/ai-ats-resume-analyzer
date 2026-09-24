@@ -24,8 +24,7 @@ A web app that scores how well a resume matches a job description and returns ac
 ATS_SCORER/
 ├── backend/              FastAPI app, NLP services, API routes
 ├── frontend/             Streamlit app, views, components
-├── jupyter notebooks/    Research and dataset prep (not used at runtime)
-├── ml model/             Exported ML artifacts
+├── notebooks/            Research and dataset prep (not used at runtime)
 ├── requirements.txt      Combined backend + frontend dependencies
 └── .env.example          Template for environment variables
 ```
@@ -99,4 +98,4 @@ The app opens at `http://localhost:8501`.
 - **Never commit `.env` or `secrets.toml`** — they hold API keys. Both are in `.gitignore`; check before you push.
 - The first run downloads the Sentence Transformer model (~80 MB). It's cached afterwards.
 - If you don't have a Groq key yet, the scoring still works — only the LLM suggestions section will be empty.
-- `jupyter notebooks/` and `ml model/` are for experimentation and aren't required to run the app.
+- `notebooks/` is for experimentation and isn't required to run the app.
